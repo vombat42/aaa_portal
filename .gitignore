@@ -6,6 +6,8 @@ debug_toolbar_settings.py
 /static/
 /media/*
 /media/
+#/templates/src/
+#/templates/src/*
 
 # Gunicorn
 gunicorn.sh

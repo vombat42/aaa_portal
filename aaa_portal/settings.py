@@ -31,9 +31,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'users.apps.UsersConfig',
-    # 'main.apps.MainConfig',
-    # 'game.apps.GameConfig',
+    # my apps:
+    'commune.apps.CommuneConfig',
+    'modules.system.apps.SystemConfig',
+    'modules.services',
 ]
 
 MIDDLEWARE = [
@@ -119,6 +120,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
+    BASE_DIR / 'templates/src', # for bootstrat
 ]
 
 MEDIA_ROOT = BASE_DIR / 'media'
