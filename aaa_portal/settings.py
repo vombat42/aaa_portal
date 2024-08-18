@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # my apps:
+    'main.apps.MainConfig',
     'commune.apps.CommuneConfig',
     'modules.system.apps.SystemConfig',
     'modules.services',
@@ -145,8 +146,8 @@ EMAIL_ADMIN = EMAIL_HOST_USER
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # LOGIN_REDIRECT_URL = 'users:profile'
-# LOGOUT_REDIRECT_URL = 'main:home'
-# LOGIN_URL = 'users:login'
+LOGOUT_REDIRECT_URL = 'home'
+LOGIN_URL = 'system:login'
 
 # AUTH_USER_MODEL = 'users.User'
 
