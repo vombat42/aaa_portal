@@ -8,6 +8,7 @@ from main.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
+    path('captcha/', include('captcha.urls')),
     path('', index, name='home'),
     path('', include('modules.system.urls', namespace='system')),
     path('game/', include('commune.urls', namespace='commune')),

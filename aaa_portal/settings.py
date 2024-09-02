@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'captcha',
     # my apps:
     'main.apps.MainConfig',
     'commune.apps.CommuneConfig',
@@ -152,3 +153,9 @@ LOGIN_URL = 'system:login'
 # AUTH_USER_MODEL = 'users.User'
 
 # DEFAULT_USER_IMAGE = '/static/users/img/anonim.png'
+
+CAPTCHA_FONT_SIZE = 32
+CAPTCHA_BACKGROUND_COLOR = '#7CFC00'
+CAPTCHA_FOREGROUND_COLOR = '#CD5C5C'
+CAPTCHA_LENGTH = 5
+# CAPTCHA_FLITE_PATH = 1
