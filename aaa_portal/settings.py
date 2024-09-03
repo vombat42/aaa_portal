@@ -159,3 +159,7 @@ CAPTCHA_BACKGROUND_COLOR = '#7CFC00'
 CAPTCHA_FOREGROUND_COLOR = '#CD5C5C'
 CAPTCHA_LENGTH = 5
 # CAPTCHA_FLITE_PATH = 1
+
+AUTHENTICATION_BACKENDS = [
+    'modules.system.backends.UserModelBackend' # переопределение аутентификации (добавление по email)
+]
